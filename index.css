@@ -1,0 +1,52 @@
+body {
+  background-color: blue;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.lifecounter {
+  height: 45vh;
+  background-color: white;
+  position: absolute;
+  top: 55vh;
+  left: 0;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 20vw);
+  grid-template-rows: 30vh 15vh;
+}
+
+.lifecounter.flip {
+    rotate: 180deg;
+    left: 0;
+    top: 0;
+}
+
+.player-lifedisplay {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    line-height: 30vh;
+}
+
+.lifedisplay {
+    margin:0;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    touch-action: pan-y;
+}
+.controlbar {
+    overflow-x:scroll;
+    height: 10vh;
+    background-color: white;
+    position:absolute;
+    top: 45vh;
+    left: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(7, 20vw);
+    grid-template-rows: auto;
+}

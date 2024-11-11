@@ -1,0 +1,16 @@
+{
+    "short_name": "Fade",
+    "name": "Fade TCG Life Tracker",
+    "icons": [
+      {
+        "src": "/FadeTCG.webp",
+        "type": "image/png",
+        "sizes": "256x256"
+      }
+    ],
+    "start_url": "https://fadetracker.doto.gay",
+    "background_color": "#6aaa64",
+    "display": "standalone",
+    "theme_color": "#6aaa64",
+    "description": "Life Tracker for the Fade TCG"
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link type="text/css" rel="stylesheet" href="/index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <div class="lifecounter">
+        <button class="lifemod" onclick="decLife(document.getElementById('lifetotal'))">-</button>
+        <p id="lifetotal" class="lifedisplay player-lifedisplay draggable-lifetotal">300</p>
+        <button class="lifemod" onclick="incLife(document.getElementById('lifetotal'))">+</button>
+        <p class="lifedisplay draggable-lifetotal">10</p>
+        <p class="lifedisplay draggable-lifetotal">10</p>
+        <p class="lifedisplay draggable-lifetotal">10</p>
+        <p class="lifedisplay draggable-lifetotal">10</p>
+        <p class="lifedisplay draggable-lifetotal">10</p>
+    </div>
+    <div class="lifecounter flip">
+        <button class="lifemod" onclick="decLife(document.getElementById('lifetotalF'))">-</button>
+        <p id="lifetotalF" class="lifedisplay player-lifedisplay draggable-lifetotal flip">300</p>
+        <button class="lifemod" onclick="incLife(document.getElementById('lifetotalF'))">+</button>
+        <p class="lifedisplay draggable-lifetotal flip">10</p>
+        <p class="lifedisplay draggable-lifetotal flip">10</p>
+        <p class="lifedisplay draggable-lifetotal flip">10</p>
+        <p class="lifedisplay draggable-lifetotal flip">10</p>
+        <p class="lifedisplay draggable-lifetotal flip">10</p>
+    </div>
+    <div class="controlbar">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <button class="reset" onclick="resetGame()">&#x27F3;</button>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
