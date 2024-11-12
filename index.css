@@ -1,10 +1,16 @@
+@font-face{
+    font-family: Renogare;
+    src: url('/Renogare-Regular.otf') format('opentype');
+}
+
 body {
-  background-color: blue;
+  background-color: white;
   height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow: hidden;
+  font-family: 'Renogare', sans-serif;
 }
 
 .lifecounter {
@@ -25,19 +31,22 @@ body {
     top: 0;
 }
 
-.player-lifedisplay {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    line-height: 30vh;
-}
-
 .lifedisplay {
     margin:0;
     text-align: center;
     align-self: center;
     height: 100%;
     touch-action: pan-y;
+    font-size: 1.5em;
 }
+
+.player-lifedisplay {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    line-height: 30vh;
+    font-size: 4em;
+}
+
 .controlbar {
     overflow-x:scroll;
     height: 10vh;
@@ -49,4 +58,21 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 20vw);
     grid-template-rows: auto;
+}
+
+button {
+    font-size: 5em;
+    background:none;
+    border:none;
+}
+button.reset {
+    font-size: 3em;
+}
+
+.barrier {
+    line-height: 23vh;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('/barrier_image.png');
 }
